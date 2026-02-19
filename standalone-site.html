@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Double R Roofing | Reliable Roofing Solutions for Princeton, WV</title>
+        <meta name="description" content="Princeton's trusted roofing experts with 20+ years experience. Professional roof inspections, repairs & replacements. Owens Corning Preferred Installer. Call (304) 216-5744.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+        <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --background: #0a0a0a;
+      --foreground: #f5f5f5;
+      --card: #141414;
+      --card-foreground: #f5f5f5;
+      --primary: #ea580c;
+      --primary-light: #fb923c;
+      --primary-foreground: #ffffff;
+      --secondary: #1a1a1a;
+      --secondary-foreground: #f5f5f5;
+      --muted: #262626;
+      --muted-foreground: #a3a3a3;
+      --border: #2a2a2a;
+      --ring: #ea580c;
+      --radius: 0.75rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-label {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: rgba(234, 88, 12, 0.1);
+      border: 1px solid rgba(234, 88, 12, 0.2);
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: var(--primary-foreground);
+      box-shadow: 0 4px 20px rgba(234, 88, 12, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(234, 88, 12, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--foreground);
+    }
+
+    .btn-outline:hover {
+      background: var(--secondary);
+      border-color: var(--primary);
+    }
+
+    .btn-lg {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+
+    /* Glass Card */
+    .glass-card {
+      background: rgba(20, 20, 20, 0.8);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      background: rgba(10, 10, 10, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .nav {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+
+    .nav-link {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted-foreground);
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover {
+      color: var(--foreground);
+    }
+
+    .header-phone {
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      .header-phone {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary);
+        font-weight: 600;
+      }
+    }
+
+    .mobile-menu-btn {
+      display: flex;
+      padding: 0.5rem;
+      background: none;
+      border: none;
+      color: var(--foreground);
+      cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-menu-btn {
+        display: none;
+      }
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 5rem;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9));
+      z-index: 1;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(234, 88, 12, 0.1);
+      border: 1px solid rgba(234, 88, 12, 0.3);
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero h1 {
+        font-size: 4.5rem;
+      }
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      max-width: 42rem;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 640px) {
+      .hero-buttons {
+        flex-direction: row;
+      }
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 36rem;
+      margin: 0 auto;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 6rem 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .section-header h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .section-header h2 {
+        font-size: 3rem;
+      }
+    }
+
+    .section-header p {
+      color: var(--muted-foreground);
+      max-width: 48rem;
+      margin: 0 auto;
+      font-size: 1.125rem;
+    }
+
+    /* Why Us Grid */
+    .why-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .why-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .why-card {
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .why-card:hover {
+      border-color: rgba(234, 88, 12, 0.5);
+    }
+
+    .why-icon {
+      width: 4rem;
+      height: 4rem;
+      background: rgba(234, 88, 12, 0.1);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+
+    .why-icon svg {
+      width: 2rem;
+      height: 2rem;
+      color: var(--primary);
+    }
+
+    .why-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+    }
+
+    .why-card p {
+      color: var(--muted-foreground);
+      font-size: 0.875rem;
+    }
+
+    /* Services */
+    .services-bg {
+      background: var(--secondary);
+    }
+
+    .services-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .service-card {
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(234, 88, 12, 0.5);
+    }
+
+    .service-icon {
+      width: 3rem;
+      height: 3rem;
+      background: rgba(234, 88, 12, 0.1);
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-icon svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--primary);
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+    }
+
+    .service-price {
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      color: var(--muted-foreground);
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-features {
+      list-style: none;
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+      margin-bottom: 0.5rem;
+    }
+
+    .service-features li svg {
+      width: 1rem;
+      height: 1rem;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    /* Value Section */
+    .value-grid {
+      display: grid;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .value-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .value-image {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .value-image::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(234, 88, 12, 0.2), transparent);
+      z-index: 1;
+    }
+
+    .value-image img {
+      width: 100%;
+      height: 24rem;
+      object-fit: cover;
+    }
+
+    .value-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .value-content h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .value-content > p {
+      color: var(--muted-foreground);
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+    }
+
+    .value-features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .value-feature {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .value-feature-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      background: rgba(234, 88, 12, 0.1);
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .value-feature-icon svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: var(--primary);
+    }
+
+    .value-feature h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 0.25rem;
+    }
+
+    .value-feature p {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+
+    /* Partnership */
+    .partnership-bg {
+      background: var(--secondary);
+    }
+
+    .partnership-grid {
+      display: grid;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .partnership-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .partnership-logo {
+      background: linear-gradient(135deg, rgba(234, 88, 12, 0.1), rgba(251, 146, 60, 0.05));
+      border: 1px solid rgba(234, 88, 12, 0.2);
+      border-radius: var(--radius);
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .partnership-logo h3 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .partnership-logo p {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .partnership-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .partnership-content h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .partnership-content > p {
+      color: var(--muted-foreground);
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+    }
+
+    .partnership-benefits {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .partnership-benefits {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .partnership-benefit {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .partnership-benefit svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: var(--primary);
+    }
+
+    .partnership-benefit span {
+      font-size: 0.875rem;
+    }
+
+    /* Weather Protection */
+    .protection-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .protection-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .protection-card {
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .protection-card:hover {
+      border-color: rgba(234, 88, 12, 0.5);
+    }
+
+    .protection-icon {
+      width: 4rem;
+      height: 4rem;
+      background: rgba(234, 88, 12, 0.1);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+
+    .protection-icon svg {
+      width: 2rem;
+      height: 2rem;
+      color: var(--primary);
+    }
+
+    .protection-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+    }
+
+    .protection-card p {
+      color: var(--muted-foreground);
+      font-size: 0.875rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--secondary);
+      border-top: 1px solid var(--border);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+      }
+    }
+
+    .footer-brand p {
+      color: var(--muted-foreground);
+      margin: 1rem 0;
+      font-size: 0.875rem;
+    }
+
+    .footer h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: var(--muted-foreground);
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-contact a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--muted-foreground);
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+
+    .footer-contact a:hover {
+      color: var(--primary);
+    }
+
+    .footer-contact svg {
+      width: 1rem;
+      height: 1rem;
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    .footer-bottom p {
+      color: var(--muted-foreground);
+      font-size: 0.875rem;
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-legal a {
+      color: var(--muted-foreground);
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+
+    .footer-legal a:hover {
+      color: var(--foreground);
+    }
+
+    /* Utility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+  </style>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-inner">
+                <a href="#" class="logo"> <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div> <span class="logo-text">Double R Roofing</span> </a>
+                <nav class="nav">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <a href="tel:+13042165744" class="header-phone"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+        (304) 216-5744 </a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80" alt="Professional roofing">
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    Owens Corning Preferred Installer
+                </div>
+                <h1>Princeton's Most <span class="gradient-text">Trusted Roofers</span></h1>
+                <p class="hero-subtitle">With over 20 years of experience, Double R Roofing delivers exceptional craftsmanship and reliable protection for your home. From inspections to complete replacements, we've got you covered.</p>
+                <div class="hero-buttons">
+                    <a href="tel:+13042165744" class="btn btn-primary btn-lg"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+          Call (304) 216-5744 </a>
+                    <a href="#services" class="btn btn-outline btn-lg">View Our Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="stat-value">20+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="stat-value">500+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div>
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Us -->
+        <section id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Why Choose Us</span>
+                    <h2>Built on <span class="gradient-text">Trust & Quality</span></h2>
+                    <p>We're not just roofers—we're your neighbors committed to protecting West Virginia homes with integrity and expertise.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="glass-card why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Licensed & Insured</h3>
+                        <p>Fully licensed and insured for your complete peace of mind and protection.</p>
+                    </div>
+                    <div class="glass-card why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                        </div>
+                        <h3>20+ Years Experience</h3>
+                        <p>Two decades of roofing expertise serving Princeton and surrounding areas.</p>
+                    </div>
+                    <div class="glass-card why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <h3>5-Star Rated</h3>
+                        <p>Consistently rated 5 stars by satisfied homeowners throughout the region.</p>
+                    </div>
+                    <div class="glass-card why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                        </div>
+                        <h3>Satisfaction Guaranteed</h3>
+                        <p>We stand behind every job with our commitment to your complete satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services -->
+        <section id="services" class="services-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Our Services</span>
+                    <h2>Complete <span class="gradient-text">Roofing Solutions</span></h2>
+                    <p>From routine inspections to complete roof replacements, we offer comprehensive services to protect your home.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                        </div>
+                        <h3>Roof Inspections</h3>
+                        <div class="service-price">Starting at $150</div>
+                        <p>Comprehensive evaluation of your roof's condition with detailed reports and recommendations.</p>
+                        <ul class="service-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Full structural assessment
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Detailed photo documentation
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Written condition report
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h3>Roof Repairs</h3>
+                        <div class="service-price">Custom Quote</div>
+                        <p>Expert repairs for leaks, storm damage, and general wear to extend your roof's lifespan.</p>
+                        <ul class="service-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Emergency leak repairs
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Storm damage restoration
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Shingle replacement
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9,22 9,12 15,12 15,22"/>
+                            </svg>
+                        </div>
+                        <h3>Full Replacement</h3>
+                        <div class="service-price">Starting at $8,500</div>
+                        <p>Complete roof replacement with premium materials and industry-leading warranties.</p>
+                        <ul class="service-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Premium shingle options
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                50-year warranty available
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                Complete cleanup included
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Value Section -->
+        <section>
+            <div class="container">
+                <div class="value-grid">
+                    <div class="value-image">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80" alt="Completed roofing project">
+                    </div>
+                    <div class="value-content">
+                        <span class="section-label">Our Commitment</span>
+                        <h2>Quality That <span class="gradient-text">Lasts Generations</span></h2>
+                        <p>We believe every home deserves a roof that provides lasting protection and peace of mind. That's why we use only the highest quality materials and proven installation techniques.</p>
+                        <div class="value-features">
+                            <div class="value-feature">
+                                <div class="value-feature-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Premium Materials</h4>
+                                    <p>Only the best shingles and underlayment from trusted manufacturers.</p>
+                                </div>
+                            </div>
+                            <div class="value-feature">
+                                <div class="value-feature-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Expert Installation</h4>
+                                    <p>Certified crews with years of hands-on roofing experience.</p>
+                                </div>
+                            </div>
+                            <div class="value-feature">
+                                <div class="value-feature-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Warranty Protection</h4>
+                                    <p>Comprehensive warranties that protect your investment for decades.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="tel:+13042165744" class="btn btn-primary">Get Your Free Estimate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partnership -->
+        <section class="partnership-bg">
+            <div class="container">
+                <div class="partnership-grid">
+                    <div class="partnership-logo">
+                        <h3 class="gradient-text">Owens Corning</h3>
+                        <p>Preferred Contractor</p>
+                    </div>
+                    <div class="partnership-content">
+                        <span class="section-label">Partnership</span>
+                        <h2>Certified <span class="gradient-text">Excellence</span></h2>
+                        <p>As an Owens Corning Preferred Contractor, we meet rigorous standards for professionalism, reliability, and quality workmanship.</p>
+                        <div class="partnership-benefits">
+                            <div class="partnership-benefit">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Extended warranty options</span>
+                            </div>
+                            <div class="partnership-benefit">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Factory-certified installers</span>
+                            </div>
+                            <div class="partnership-benefit">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Premium product access</span>
+                            </div>
+                            <div class="partnership-benefit">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Verified credentials</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Weather Protection -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Protection</span>
+                    <h2>Weather Protection <span class="gradient-text">You Can Count On</span></h2>
+                    <p>West Virginia weather can be unpredictable and unforgiving. From intense summer storms to harsh winter conditions, your roof faces constant challenges.</p>
+                </div>
+                <div class="protection-grid">
+                    <div class="glass-card protection-card">
+                        <div class="protection-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/>
+                                <line x1="8" y1="16" x2="8.01" y2="16"/>
+                                <line x1="8" y1="20" x2="8.01" y2="20"/>
+                                <line x1="12" y1="18" x2="12.01" y2="18"/>
+                                <line x1="12" y1="22" x2="12.01" y2="22"/>
+                                <line x1="16" y1="16" x2="16.01" y2="16"/>
+                                <line x1="16" y1="20" x2="16.01" y2="20"/>
+                            </svg>
+                        </div>
+                        <h3>Rain & Snow Defense</h3>
+                        <p>Advanced waterproofing systems that channel moisture away from your home, preventing leaks even during the heaviest downpours.</p>
+                    </div>
+                    <div class="glass-card protection-card">
+                        <div class="protection-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Moisture Prevention</h3>
+                        <p>Stop mold, mildew, and rot before they start with proper ventilation and moisture barriers that keep your attic dry.</p>
+                    </div>
+                    <div class="glass-card protection-card">
+                        <div class="protection-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/>
+                                <path d="M9.6 4.6A2 2 0 1 1 11 8H2"/>
+                                <path d="M12.6 19.4A2 2 0 1 0 14 16H2"/>
+                            </svg>
+                        </div>
+                        <h3>Wind Resistance</h3>
+                        <p>Secure installation techniques and impact-resistant materials that stand strong against high winds and severe storms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="logo"> <div class="logo-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                    <polyline points="9,22 9,12 15,12 15,22"/>
+                                </svg>
+                            </div> <span class="logo-text">Double R Roofing</span> </a>
+                        <p>Princeton's trusted roofing experts with over 20 years of experience protecting West Virginia homes.</p>
+                    </div>
+                    <div>
+                        <h4>Services</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#services">Roof Inspections</a>
+                            </li>
+                            <li>
+                                <a href="#services">Roof Repairs</a>
+                            </li>
+                            <li>
+                                <a href="#services">Full Replacement</a>
+                            </li>
+                            <li>
+                                <a href="#services">Storm Damage</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Company</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#about">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#services">Our Work</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <div class="footer-contact">
+                            <a href="tel:+13042165744"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+              (304) 216-5744 </a>
+                            <a href="mailto:info@double-r-roofing.com"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+              info@double-r-roofing.com </a>
+                            <a href="#"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+              Princeton, WV </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2024 Double R Roofing. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

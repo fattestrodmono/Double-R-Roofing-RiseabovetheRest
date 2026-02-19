@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Lines&family=Walter+Turncoat&display=swap" rel="stylesheet"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>Owens Corning Preferred Contractor | Double R Roofing WV</title>
+        <meta content="Certified Owens Corning Preferred Contractor in Princeton, WV. Premium roofing shingles with extended warranties and expert installation." name="description"/>
+        <link href="images/Double_R_Roofing_logo_with_transparent_background.PNG" rel="icon" type="image/png"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+        <style>* { margin: 0; padding: 0; box-sizing: border-box; } :root { --primary: #ff4500; --dark: #1a1a1a; --light: #ffffff; --bg-dark: #0a0a0a; } body { font-family: 'Walter Turncoat', cursive; background: var(--bg-dark); color: var(--light); overflow-x: hidden; } h1, h2, h3, h4, h5, h6 { font-family: 'Rubik Lines', sans-serif; color: var(--primary); } /* Nail Gun & Nailing Background Theme */.bg-animation { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; overflow: hidden; background: linear-gradient(135deg, #0a0a0a 0%, #1a1510 50%, #2a1a15 100%); } /* Floating Nail Guns */.nailgun-container { position: absolute; width: 100%; height: 100%; } .nailgun { position: absolute; font-size: 60px; color: rgba(255, 69, 0, 0.25); animation: nailgunFloat 18s infinite ease-in-out; filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.3)); } .nailgun:nth-child(1) { top: 15%; left: 8%; animation-delay: 0s; animation-duration: 16s; } .nailgun:nth-child(2) { top: 35%; right: 12%; animation-delay: -4s; animation-duration: 20s; transform: rotate(45deg); } .nailgun:nth-child(3) { top: 55%; left: 50%; animation-delay: -8s; animation-duration: 18s; transform: rotate(-30deg); } .nailgun:nth-child(4) { top: 75%; right: 30%; animation-delay: -12s; animation-duration: 22s; transform: rotate(15deg); } .nailgun:nth-child(5) { top: 25%; left: 70%; animation-delay: -6s; animation-duration: 19s; transform: rotate(-45deg); } @keyframes nailgunFloat { 0%, 100% {  transform: translateY(0) rotate(0deg) scale(1);  opacity: 0.25; }  25% {  transform: translateY(-30px) rotate(15deg) scale(1.1);  opacity: 0.4; }  50% {  transform: translateY(-15px) rotate(-10deg) scale(1.05);  opacity: 0.35; }  75% {  transform: translateY(-25px) rotate(20deg) scale(1.08);  opacity: 0.38; } } /* Nails Being Driven */.nails-container { position: absolute; width: 100%; height: 100%; } .nail { position: absolute; width: 3px; height: 40px; background: linear-gradient(180deg, 
+                rgba(255, 69, 0, 0.8) 0%, 
+                rgba(255, 69, 0, 0.4) 70%,
+                rgba(255, 69, 0, 0.2) 100%); animation: nailDrive 3s ease-in infinite; box-shadow: 0 0 5px rgba(255, 69, 0, 0.5); } .nail::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 8px; height: 8px; background: rgba(255, 69, 0, 0.9); border-radius: 50%; box-shadow: 0 0 10px rgba(255, 69, 0, 0.7); } .nail:nth-child(1) { left: 10%; animation-delay: 0s; } .nail:nth-child(2) { left: 18%; animation-delay: 0.3s; } .nail:nth-child(3) { left: 26%; animation-delay: 0.6s; } .nail:nth-child(4) { left: 34%; animation-delay: 0.9s; } .nail:nth-child(5) { left: 42%; animation-delay: 1.2s; } .nail:nth-child(6) { left: 50%; animation-delay: 1.5s; } .nail:nth-child(7) { left: 58%; animation-delay: 1.8s; } .nail:nth-child(8) { left: 66%; animation-delay: 2.1s; } .nail:nth-child(9) { left: 74%; animation-delay: 2.4s; } .nail:nth-child(10) { left: 82%; animation-delay: 2.7s; } .nail:nth-child(11) { left: 14%; animation-delay: 0.4s; } .nail:nth-child(12) { left: 30%; animation-delay: 1s; } .nail:nth-child(13) { left: 54%; animation-delay: 1.7s; } .nail:nth-child(14) { left: 70%; animation-delay: 2.3s; } .nail:nth-child(15) { left: 86%; animation-delay: 0.8s; } @keyframes nailDrive { 0% {  top: -50px;  opacity: 0;  transform: rotate(0deg); }  10% {  opacity: 1; }  40% {  top: 30%;  opacity: 1;  transform: rotate(5deg); }  60% {  top: 30%;  opacity: 1; }  100% {  top: 30%;  opacity: 0;  transform: rotate(0deg) scale(0.8); } } /* Impact Sparks */.sparks-container { position: absolute; width: 100%; height: 100%; } .spark { position: absolute; width: 4px; height: 4px; background: var(--primary); border-radius: 50%; animation: sparkBurst 2s ease-out infinite; box-shadow: 0 0 8px rgba(255, 69, 0, 0.8); } .spark:nth-child(1) { left: 20%; top: 30%; animation-delay: 0s; } .spark:nth-child(2) { left: 40%; top: 30%; animation-delay: 0.5s; } .spark:nth-child(3) { left: 60%; top: 30%; animation-delay: 1s; } .spark:nth-child(4) { left: 80%; top: 30%; animation-delay: 1.5s; } .spark:nth-child(5) { left: 30%; top: 30%; animation-delay: 0.7s; } .spark:nth-child(6) { left: 50%; top: 30%; animation-delay: 1.2s; } .spark:nth-child(7) { left: 70%; top: 30%; animation-delay: 1.7s; } @keyframes sparkBurst { 0% {  opacity: 0;  transform: translate(0, 0) scale(1); }  20% {  opacity: 1; }  100% {  opacity: 0;  transform: translate(var(--tx, 20px), var(--ty, -30px)) scale(0.3); } } .spark:nth-child(1) { --tx: 15px; --ty: -25px; } .spark:nth-child(2) { --tx: -18px; --ty: -20px; } .spark:nth-child(3) { --tx: 22px; --ty: -28px; } .spark:nth-child(4) { --tx: -15px; --ty: -22px; } .spark:nth-child(5) { --tx: 12px; --ty: -30px; } .spark:nth-child(6) { --tx: -20px; --ty: -26px; } .spark:nth-child(7) { --tx: 18px; --ty: -24px; } /* Shingle Pattern Background */.shingle-pattern { position: absolute; width: 100%; height: 100%; opacity: 0.1; background-image: repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 15px,
+                    rgba(255, 69, 0, 0.1) 15px,
+                    rgba(255, 69, 0, 0.1) 18px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 80px,
+                    rgba(255, 69, 0, 0.08) 80px,
+                    rgba(255, 69, 0, 0.08) 83px
+                ); animation: shingleMove 40s linear infinite; } @keyframes shingleMove { 0% {  background-position: 0 0; }  100% {  background-position: 80px 30px; } } /* Certification Badges Floating */.cert-badges { position: absolute; width: 100%; height: 100%; } .cert-badge { position: absolute; width: 70px; height: 70px; border: 3px solid rgba(255, 69, 0, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; color: rgba(255, 69, 0, 0.5); animation: badgeFloat 8s ease-in-out infinite; background: rgba(255, 69, 0, 0.05); } .cert-badge:nth-child(1) { top: 20%; right: 10%; animation-delay: 0s; } .cert-badge:nth-child(2) { top: 60%; right: 80%; animation-delay: 2s; } .cert-badge:nth-child(3) { top: 80%; right: 50%; animation-delay: 4s; } @keyframes badgeFloat { 0%, 100% {  transform: translateY(0) rotate(0deg) scale(1);  opacity: 0.5;  box-shadow: 0 0 0 0 rgba(255, 69, 0, 0.4); }  50% {  transform: translateY(-20px) rotate(180deg) scale(1.1);  opacity: 0.7;  box-shadow: 0 0 0 20px rgba(255, 69, 0, 0); } } /* Grid Overlay */.installation-grid { position: absolute; width: 100%; height: 100%; background-image: linear-gradient(rgba(255, 69, 0, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 69, 0, 0.03) 1px, transparent 1px); background-size: 60px 60px; animation: gridSlide 35s linear infinite; } @keyframes gridSlide { 0% {  background-position: 0 0; }  100% {  background-position: 60px 60px; } } /* Header */.header { position: relative; z-index: 1000; background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px); border-bottom: 2px solid rgba(255, 69, 0, 0.2); padding: 1rem 0; animation: slideDown 0.6s ease-out; } @keyframes slideDown { from {  transform: translateY(-100%);  opacity: 0; }  to {  transform: translateY(0);  opacity: 1; } } .header-inner { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; } .logo { display: flex; align-items: center; gap: 1rem; text-decoration: none; transition: transform 0.3s ease; } .logo:hover { transform: scale(1.05); } .logo-img { height: 50px; filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.5)); animation: pulse 2s ease-in-out infinite; } @keyframes pulse { 0%, 100% {  filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.5)); }  50% {  filter: drop-shadow(0 0 20px rgba(255, 69, 0, 0.8)); } } .logo-text { font-family: 'Rubik Lines', sans-serif; font-size: 1.5rem; color: var(--primary); } .nav { display: flex; gap: 2rem; align-items: center; } .nav-link { color: var(--light); text-decoration: none; font-size: 1.1rem; position: relative; transition: color 0.3s ease; } .nav-link::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--primary); transition: width 0.3s ease; } .nav-link:hover { color: var(--primary); } .nav-link:hover::after { width: 100%; } .preferred-badge { background: rgba(255, 69, 0, 0.2); border: 2px solid var(--primary); padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; animation: badgePulse 3s ease-in-out infinite; } @keyframes badgePulse { 0%, 100% {  transform: scale(1);  box-shadow: 0 0 10px rgba(255, 69, 0, 0.3); }  50% {  transform: scale(1.05);  box-shadow: 0 0 20px rgba(255, 69, 0, 0.6); } } .header-phone { background: var(--primary); color: var(--light); padding: 0.75rem 1.5rem; border-radius: 25px; text-decoration: none; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(255, 69, 0, 0.3); } .header-phone:hover { background: #ff5722; transform: translateY(-2px); box-shadow: 0 5px 30px rgba(255, 69, 0, 0.5); } .mobile-menu-btn { display: none; background: none; border: 2px solid var(--primary); color: var(--primary); font-size: 1.5rem; padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; } /* Content */.content-wrap { position: relative; z-index: 10; } .hero-section { min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; } .container { max-width: 1200px; margin: 0 auto; } .badge-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255, 69, 0, 0.2); border: 1px solid var(--primary); padding: 0.5rem 1.5rem; border-radius: 25px; font-size: 1rem; margin-bottom: 2rem; animation: fadeInUp 0.8s ease-out; } @keyframes fadeInUp { from {  opacity: 0;  transform: translateY(30px); }  to {  opacity: 1;  transform: translateY(0); } } .hero-title { font-size: 4rem; margin-bottom: 1.5rem; animation: fadeInUp 1s ease-out 0.2s backwards; text-shadow: 0 0 30px rgba(255, 69, 0, 0.5); } .hero-lead { font-size: 1.5rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto; animation: fadeInUp 1s ease-out 0.4s backwards; } .btn-primary-custom { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary); color: var(--light); padding: 1rem 2rem; border-radius: 30px; text-decoration: none; font-size: 1.2rem; transition: all 0.3s ease; border: 2px solid var(--primary); box-shadow: 0 5px 20px rgba(255, 69, 0, 0.4); animation: fadeInUp 1s ease-out 0.6s backwards; position: relative; overflow: hidden; } .btn-primary-custom::before { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.3); transform: translate(-50%, -50%); transition: width 0.6s ease, height 0.6s ease; } .btn-primary-custom:hover::before { width: 300px; height: 300px; } .btn-primary-custom:hover { background: #ff5722; transform: translateY(-5px) scale(1.05); box-shadow: 0 15px 40px rgba(255, 69, 0, 0.7); } .btn-primary-custom i { transition: transform 0.3s ease; } .btn-primary-custom:hover i { transform: scale(1.3) rotate(15deg); } .section { padding: 5rem 2rem; } .section-title { font-size: 3rem; text-align: center; margin-bottom: 1rem; text-shadow: 0 0 20px rgba(255, 69, 0, 0.3); } .section-subtitle { font-size: 1.3rem; text-align: center; color: rgba(255, 255, 255, 0.8); margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto; } .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; } .product-card { background: rgba(26, 26, 26, 0.8); border: 2px solid rgba(255, 69, 0, 0.2); border-radius: 15px; padding: 2.5rem; transition: all 0.4s ease; position: relative; overflow: hidden; cursor: pointer; } .product-card::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255, 69, 0, 0.1), transparent); transform: rotate(45deg); transition: all 0.6s ease; } .product-card:hover::before { left: 100%; } .product-card::after { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-radius: 50%; background: rgba(255, 69, 0, 0.08); transform: translate(-50%, -50%); transition: width 0.6s ease, height 0.6s ease; } .product-card:hover::after { width: 350px; height: 350px; } .product-card:hover { transform: translateY(-15px) scale(1.03); border-color: var(--primary); box-shadow: 0 20px 60px rgba(255, 69, 0, 0.5); } .product-icon-large { width: 80px; height: 80px; background: rgba(255, 69, 0, 0.1); border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; transition: all 0.4s ease; position: relative; z-index: 1; } .product-card:hover .product-icon-large { background: var(--primary); transform: rotate(360deg) scale(1.15); box-shadow: 0 0 30px rgba(255, 69, 0, 0.8); } .product-icon-large i { font-size: 2rem; color: var(--primary); transition: all 0.4s ease; } .product-card:hover .product-icon-large i { color: var(--light); transform: scale(1.2); } .product-title { font-size: 1.8rem; margin-bottom: 1rem; position: relative; z-index: 1; } .product-description { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.6; margin-bottom: 1.5rem; position: relative; z-index: 1; } .product-features { list-style: none; padding: 0; position: relative; z-index: 1; } .product-features li { padding: 0.5rem 0; color: rgba(255, 255, 255, 0.9); position: relative; padding-left: 2rem; transition: all 0.3s ease; } .product-features li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: bold; font-size: 1.2rem; transition: all 0.3s ease; } .product-card:hover .product-features li::before { transform: scale(1.3) rotate(360deg); } .product-card:hover .product-features li { transform: translateX(5px); } /* Benefits Grid */.benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0; } .benefit-card { background: rgba(255, 69, 0, 0.05); border: 2px solid rgba(255, 69, 0, 0.3); border-radius: 15px; padding: 2rem; text-align: center; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden; } .benefit-card::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255, 69, 0, 0.1), transparent); transform: rotate(45deg); transition: all 0.5s ease; } .benefit-card:hover::before { left: 100%; } .benefit-card:hover { transform: translateY(-10px) rotate(2deg); border-color: var(--primary); box-shadow: 0 10px 40px rgba(255, 69, 0, 0.4); } .benefit-number { font-family: 'Rubik Lines', sans-serif; font-size: 3.5rem; color: var(--primary); margin-bottom: 0.5rem; transition: all 0.3s ease; } .benefit-card:hover .benefit-number { transform: scale(1.2); text-shadow: 0 0 20px rgba(255, 69, 0, 0.8); } .benefit-card h3 { margin-bottom: 0.5rem; font-size: 1.5rem; } .benefit-card p { color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; } /* Footer */.footer-mega { background: rgba(10, 10, 10, 0.95); border-top: 2px solid rgba(255, 69, 0, 0.3); padding: 3rem 2rem 1rem; position: relative; z-index: 10; } .footer-content-mega { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem; } .footer-text-mega h3 { margin-bottom: 1rem; } .footer-text-mega p { color: rgba(255, 255, 255, 0.8); margin-bottom: 0.5rem; } .social-links-mega { display: flex; gap: 1rem; } .social-links-mega a { width: 45px; height: 45px; background: rgba(255, 69, 0, 0.1); border: 2px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); text-decoration: none; transition: all 0.3s ease; } .social-links-mega a:hover { background: var(--primary); color: var(--light); transform: translateY(-5px) rotate(360deg); } .footer-bottom-mega { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 69, 0, 0.2); color: rgba(255, 255, 255, 0.6); } .footer-bottom-mega a { color: var(--primary); text-decoration: none; } /* Responsive */@media (max-width: 1024px) { .nav {  position: fixed;  top: 80px;  left: -100%;  width: 100%;  height: calc(100vh - 80px);  background: rgba(10, 10, 10, 0.98);  flex-direction: column;  padding: 2rem;  transition: left 0.3s ease; }  .nav.active {  left: 0; }  .mobile-menu-btn {  display: block; }  .hero-title {  font-size: 2.5rem; } } @media (max-width: 768px) { .hero-title {  font-size: 2rem; } } .reveal { opacity: 0; transform: translateY(50px); transition: all 0.6s ease; } .reveal.active { opacity: 1; transform: translateY(0); }</style>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!-- Nail Gun & Installation Background -->
+        <div class="bg-animation">
+            <!-- Floating Nail Guns -->
+            <div class="nailgun-container">
+                <i class="fas fa-hammer nailgun"></i>
+                <i class="fas fa-hammer nailgun"></i>
+                <i class="fas fa-hammer nailgun"></i>
+                <i class="fas fa-hammer nailgun"></i>
+                <i class="fas fa-hammer nailgun"></i>
+            </div>
+            <!-- Nails Being Driven -->
+            <div class="nails-container">
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+                <div class="nail"></div>
+            </div>
+            <!-- Impact Sparks -->
+            <div class="sparks-container">
+                <div class="spark"></div>
+                <div class="spark"></div>
+                <div class="spark"></div>
+                <div class="spark"></div>
+                <div class="spark"></div>
+                <div class="spark"></div>
+                <div class="spark"></div>
+            </div>
+            <!-- Certification Badges -->
+            <div class="cert-badges">
+                <div class="cert-badge">★</div>
+                <div class="cert-badge">✓</div>
+                <div class="cert-badge">◆</div>
+            </div>
+            <!-- Background Patterns -->
+            <div class="shingle-pattern"></div>
+            <div class="installation-grid"></div>
+        </div>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-inner">
+                <a class="logo" href="index.html"> <img alt="Double R Roofing Logo" class="logo-img" src="images/Double_R_Roofing_logo_with_transparent_background.PNG"/> <span class="logo-text">Double R Roofing</span> </a>
+                <nav class="nav">
+                    <span class="preferred-badge"> <i class="fas fa-award"></i> Owens Corning Preferred Contractor </span>
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="roofing-services-princeton-wv.html">Services</a>
+                    <a class="nav-link" href="contact-double-r-roofing.html">Contact</a>
+                </nav>
+                <a class="header-phone" href="tel:3047165744"> <i class="fas fa-phone"></i> (304) 716-5744 </a>
+                <button aria-label="Open menu" class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+        <div class="content-wrap">
+            <section class="hero-section">
+                <div class="container">
+                    <span class="badge-pill"> <i class="fas fa-certificate"></i> Certified Excellence </span>
+                    <h1 class="hero-title">Owens Corning Preferred Contractor</h1>
+                    <p class="hero-lead">
+                    As a certified Owens Corning Preferred Contractor, we offer premium roofing solutions with 
+                    extended warranties, expert installation, and industry-leading products backed by over 80 years of excellence. </p>
+                    <a class="btn-primary-custom" href="contact.html"> <i class="fas fa-award"></i>Get Your Preferred Installation </a>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Owens Corning Premium Products</h2>
+                    <p class="section-subtitle">
+                    Industry-leading shingles designed for beauty, durability, and lasting protection </p>
+                    <div class="products-grid">
+                        <div class="product-card reveal">
+                            <div class="product-icon-large">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3 class="product-title">Duration® Series</h3>
+                            <p class="product-description">
+                            Premium architectural shingles with SureNail® Technology for exceptional wind resistance and superior performance. </p>
+                            <ul class="product-features">
+                                <li>130 MPH wind resistance</li>
+                                <li>Limited lifetime warranty</li>
+                                <li>SureNail® Technology strip</li>
+                                <li>Dimensional appearance</li>
+                            </ul>
+                        </div>
+                        <div class="product-card reveal">
+                            <div class="product-icon-large">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="product-title">Oakridge® Shingles</h3>
+                            <p class="product-description">
+                            Dependable 3-tab and laminated shingles offering proven performance and timeless beauty at an exceptional value. </p>
+                            <ul class="product-features">
+                                <li>25-30 year warranty</li>
+                                <li>Classic styling</li>
+                                <li>Algae resistance</li>
+                                <li>Cost-effective solution</li>
+                            </ul>
+                        </div>
+                        <div class="product-card reveal">
+                            <div class="product-icon-large">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3 class="product-title">Berkshire® Collection</h3>
+                            <p class="product-description">
+                            Ultra-premium designer shingles replicating the look of natural slate with unmatched elegance and dimension. </p>
+                            <ul class="product-features">
+                                <li>Luxury aesthetic</li>
+                                <li>Deep shadow lines</li>
+                                <li>Extended warranties</li>
+                                <li>Premium color blends</li>
+                            </ul>
+                        </div>
+                        <div class="product-card reveal">
+                            <div class="product-icon-large">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="product-title">TruDefinition® Duration®</h3>
+                            <p class="product-description">
+                            Advanced color technology delivering bold, vibrant hues with exceptional contrast and curb appeal. </p>
+                            <ul class="product-features">
+                                <li>Enhanced color granules</li>
+                                <li>Superior contrast</li>
+                                <li>SureNail® Technology</li>
+                                <li>Limited lifetime warranty</li>
+                            </ul>
+                        </div>
+                        <div class="product-card reveal">
+                            <div class="product-icon-large">
+                                <i class="fas fa-thermometer-half"></i>
+                            </div>
+                            <h3 class="product-title">VentSure® Ventilation</h3>
+                            <p class="product-description">
+                            Complete roof ventilation systems that protect against heat and moisture damage while extending roof life. </p>
+                            <ul class="product-features">
+                                <li>Optimal airflow</li>
+                                <li>Energy efficiency</li>
+                                <li>Moisture control</li>
+                                <li>System compatibility</li>
+                            </ul>
+                        </div>
+                        <div class="product-card reveal">
+                            <div class="product-icon-large">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3 class="product-title">Total Protection System</h3>
+                            <p class="product-description">
+                            Comprehensive roofing system combining all components for maximum performance and extended warranty coverage. </p>
+                            <ul class="product-features">
+                                <li>Complete integration</li>
+                                <li>System warranty</li>
+                                <li>Optimized performance</li>
+                                <li>Peace of mind</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Preferred Contractor Benefits</h2>
+                    <p class="section-subtitle">
+                    Exclusive advantages only available through certified Owens Corning contractors </p>
+                    <div class="benefits-grid">
+                        <div class="benefit-card reveal">
+                            <div class="benefit-number">50</div>
+                            <h3>Year Warranty</h3>
+                            <p>Extended warranty protection on select systems</p>
+                        </div>
+                        <div class="benefit-card reveal">
+                            <div class="benefit-number">100%</div>
+                            <h3>Factory Certified</h3>
+                            <p>Expert installation by trained professionals</p>
+                        </div>
+                        <div class="benefit-card reveal">
+                            <div class="benefit-number">130</div>
+                            <h3>MPH Wind Rating</h3>
+                            <p>Superior wind resistance with SureNail® Technology</p>
+                        </div>
+                        <div class="benefit-card reveal">
+                            <div class="benefit-number">80+</div>
+                            <h3>Years Legacy</h3>
+                            <p>Owens Corning's proven track record of excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer-mega">
+            <div class="footer-content-mega">
+                <div class="footer-text-mega">
+                    <h3>Double R Roofing</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 510 Oliver Ave, Princeton, WV 24740</p>
+                    <p><i class="fas fa-phone"></i> (304) 716-5744</p>
+                    <p><i class="fas fa-envelope"></i> info@double-r-roofing.com</p>
+                </div>
+                <div class="social-links-mega">
+                    <a href="https://www.facebook.com/doublerroofing" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/doublerroofing" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom-mega">
+                <p>© 2026 Double R Roofing. All Rights Reserved. | <a href="privacy-policy-princeton-wv.html">Privacy Policy</a></p>
+            </div>
+        </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('.nav');
+            
+            if (mobileMenuBtn && nav) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                });
+            }
+
+            const reveals = document.querySelectorAll('.reveal');
+            const revealOnScroll = () => {
+                reveals.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('active');
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll();
+
+            // Interactive product cards with 3D tilt
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const rotateX = (y - centerY) / 15;
+                    const rotateY = (centerX - x) / 15;
+                    
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-15px) scale(1.03)`;
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+                });
+
+                // Click animation
+                card.addEventListener('click', function() {
+                    this.style.animation = 'none';
+                    setTimeout(() => {
+                        this.style.animation = '';
+                    }, 10);
+                });
+            });
+
+            // Benefit cards bounce on click
+            const benefitCards = document.querySelectorAll('.benefit-card');
+            benefitCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const number = this.querySelector('.benefit-number');
+                    number.style.transform = 'scale(1.4) rotate(360deg)';
+                    setTimeout(() => {
+                        number.style.transform = 'scale(1)';
+                    }, 400);
+                });
+            });
+
+            // Nail speed increases on scroll
+            window.addEventListener('scroll', () => {
+                const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight));
+                const speed = Math.max(0.5, 1 - scrollPercent * 0.5);
+                document.querySelectorAll('.nail').forEach(nail => {
+                    nail.style.animationDuration = (3 * speed) + 's';
+                });
+            });
+
+            // Click anywhere to trigger a nail drive
+            let canDrive = true;
+            document.addEventListener('click', (e) => {
+                if (canDrive && !e.target.closest('a') && !e.target.closest('button')) {
+                    const nailsContainer = document.querySelector('.nails-container');
+                    if (nailsContainer) {
+                        const tempNail = document.createElement('div');
+                        tempNail.className = 'nail';
+                        tempNail.style.left = (e.clientX / window.innerWidth * 100) + '%';
+                        tempNail.style.animationDuration = '1s';
+                        nailsContainer.appendChild(tempNail);
+                        
+                        setTimeout(() => {
+                            tempNail.remove();
+                        }, 1000);
+                        
+                        canDrive = false;
+                        setTimeout(() => { canDrive = true; }, 300);
+                    }
+                }
+            });
+
+            // Preferred badge interactive pulse
+            const preferredBadge = document.querySelector('.preferred-badge');
+            if (preferredBadge) {
+                setInterval(() => {
+                    preferredBadge.style.transform = 'scale(1.15)';
+                    setTimeout(() => {
+                        preferredBadge.style.transform = 'scale(1)';
+                    }, 300);
+                }, 5000);
+            }
+        });
+    </script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
