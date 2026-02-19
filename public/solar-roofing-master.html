@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Lines&family=Walter+Turncoat&display=swap" rel="stylesheet"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>Solar Roofing Solutions | Double R Roofing WV</title>
+        <meta content="Solar-ready roofing and integrated solar solutions in Princeton, WV. Energy-efficient roofing systems designed for solar panel installation." name="description"/>
+        <link href="images/Double_R_Roofing_logo_with_transparent_background.PNG" rel="icon" type="image/png"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #ff4500;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+            --bg-dark: #0a0a0a;
+        }
+        
+        body {
+            font-family: 'Walter Turncoat', cursive;
+            background: var(--bg-dark);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Rubik Lines', sans-serif;
+            color: var(--primary);
+        }
+        
+        /* Solar/Sun Theme Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+            background: radial-gradient(circle at 50% 30%, #2a1a10 0%, #1a1410 40%, #0a0a0a 100%);
+        }
+        
+        /* Sun/Energy Source */
+        .sun-container {
+            position: absolute;
+            top: 10%;
+            right: 15%;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .sun {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 69, 0, 0.4) 0%, rgba(255, 69, 0, 0.1) 50%, transparent 70%);
+            border-radius: 50%;
+            animation: sunPulse 4s ease-in-out infinite;
+        }
+        
+        .sun::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 69, 0, 0.6);
+            border-radius: 50%;
+            animation: coreRotate 20s linear infinite;
+        }
+        
+        @keyframes sunPulse {
+            0%, 100% { transform: scale(1); opacity: 0.6; }
+            50% { transform: scale(1.2); opacity: 0.9; }
+        }
+        
+        @keyframes coreRotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        /* Sun Rays */
+        .sun-rays {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .ray {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 4px;
+            height: 100px;
+            background: linear-gradient(180deg, rgba(255, 69, 0, 0.6), transparent);
+            transform-origin: top center;
+            animation: rayRotate 15s linear infinite;
+        }
+        
+        .ray:nth-child(1) { transform: translate(-50%, 0) rotate(0deg); }
+        .ray:nth-child(2) { transform: translate(-50%, 0) rotate(45deg); }
+        .ray:nth-child(3) { transform: translate(-50%, 0) rotate(90deg); }
+        .ray:nth-child(4) { transform: translate(-50%, 0) rotate(135deg); }
+        .ray:nth-child(5) { transform: translate(-50%, 0) rotate(180deg); }
+        .ray:nth-child(6) { transform: translate(-50%, 0) rotate(225deg); }
+        .ray:nth-child(7) { transform: translate(-50%, 0) rotate(270deg); }
+        .ray:nth-child(8) { transform: translate(-50%, 0) rotate(315deg); }
+        
+        @keyframes rayRotate {
+            from { transform: translate(-50%, 0) rotate(0deg); }
+            to { transform: translate(-50%, 0) rotate(360deg); }
+        }
+        
+        /* Floating Solar Panels */
+        .solar-panels {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .solar-panel {
+            position: absolute;
+            width: 120px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(255, 69, 0, 0.1) 0%, rgba(255, 69, 0, 0.2) 100%);
+            border: 2px solid rgba(255, 69, 0, 0.3);
+            border-radius: 5px;
+            animation: floatPanel 25s infinite ease-in-out;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 3px;
+            padding: 5px;
+        }
+        
+        .solar-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 38px,
+                rgba(255, 69, 0, 0.2) 38px,
+                rgba(255, 69, 0, 0.2) 40px
+            );
+        }
+        
+        .solar-panel:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .solar-panel:nth-child(2) { left: 40%; animation-delay: -8s; }
+        .solar-panel:nth-child(3) { left: 70%; animation-delay: -16s; }
+        
+        @keyframes floatPanel {
+            0%, 100% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% { opacity: 0.5; }
+            90% { opacity: 0.5; }
+            50% {
+                transform: translateY(-10vh) rotate(15deg);
+            }
+        }
+        
+        /* Energy Particles */
+        .energy-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: particleRise 5s linear infinite;
+        }
+        
+        .particle:nth-child(1) { left: 15%; animation-delay: 0s; }
+        .particle:nth-child(2) { left: 30%; animation-delay: 1s; }
+        .particle:nth-child(3) { left: 45%; animation-delay: 2s; }
+        .particle:nth-child(4) { left: 60%; animation-delay: 3s; }
+        .particle:nth-child(5) { left: 75%; animation-delay: 4s; }
+        .particle:nth-child(6) { left: 90%; animation-delay: 2.5s; }
+        
+        @keyframes particleRise {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% {
+                bottom: 100%;
+                opacity: 0;
+                transform: translateX(30px);
+            }
+        }
+        
+        /* Power Icons */
+        .power-icons {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .power-icon {
+            position: absolute;
+            font-size: 40px;
+            color: rgba(255, 69, 0, 0.2);
+            animation: powerFloat 12s infinite ease-in-out;
+        }
+        
+        .power-icon:nth-child(1) { top: 25%; left: 10%; animation-delay: 0s; }
+        .power-icon:nth-child(2) { top: 50%; left: 80%; animation-delay: -3s; }
+        .power-icon:nth-child(3) { top: 70%; left: 30%; animation-delay: -6s; }
+        .power-icon:nth-child(4) { top: 85%; left: 65%; animation-delay: -9s; }
+        
+        @keyframes powerFloat {
+            0%, 100% {
+                transform: translateY(0) scale(1);
+                opacity: 0.2;
+            }
+            50% {
+                transform: translateY(-20px) scale(1.1);
+                opacity: 0.4;
+            }
+        }
+        
+        /* Grid Pattern */
+        .solar-grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(255, 69, 0, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 69, 0, 0.04) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: gridFlow 40s linear infinite;
+        }
+        
+        @keyframes gridFlow {
+            0% { background-position: 0 0; }
+            100% { background-position: 60px 60px; }
+        }
+        
+        /* Header */
+        .header {
+            position: relative;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid rgba(255, 69, 0, 0.2);
+            padding: 1rem 0;
+            animation: slideDown 0.6s ease-out;
+        }
+        
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .header-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo-img {
+            height: 50px;
+            filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.5));
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.5)); }
+            50% { filter: drop-shadow(0 0 20px rgba(255, 69, 0, 0.8)); }
+        }
+        
+        .logo-text {
+            font-family: 'Rubik Lines', sans-serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--light);
+            text-decoration: none;
+            font-size: 1.1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .header-phone {
+            background: var(--primary);
+            color: var(--light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.3);
+        }
+        
+        .header-phone:hover {
+            background: #ff5722;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 30px rgba(255, 69, 0, 0.5);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+        /* Content */
+        .content-wrap {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .hero-section {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 69, 0, 0.2);
+            border: 1px solid var(--primary);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+            text-shadow: 0 0 30px rgba(255, 69, 0, 0.5);
+        }
+        
+        .hero-lead {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+        }
+        
+        .btn-primary-custom {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: var(--light);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary);
+            box-shadow: 0 5px 20px rgba(255, 69, 0, 0.4);
+            animation: fadeInUp 1s ease-out 0.6s backwards;
+        }
+        
+        .btn-primary-custom:hover {
+            background: transparent;
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 69, 0, 0.6);
+        }
+        
+        .section {
+            padding: 5rem 2rem;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 20px rgba(255, 69, 0, 0.3);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .service-card {
+            background: rgba(26, 26, 26, 0.8);
+            border: 2px solid rgba(255, 69, 0, 0.2);
+            border-radius: 15px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 69, 0, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+        }
+        
+        .service-card:hover::before {
+            left: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 15px 50px rgba(255, 69, 0, 0.4);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 69, 0, 0.1);
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            background: var(--primary);
+            transform: rotate(360deg);
+        }
+        
+        .service-icon i {
+            font-size: 2rem;
+            color: var(--primary);
+            transition: color 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon i {
+            color: var(--light);
+        }
+        
+        .service-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-description {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+        
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .benefit-card {
+            background: rgba(255, 69, 0, 0.05);
+            border: 2px solid rgba(255, 69, 0, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 40px rgba(255, 69, 0, 0.3);
+        }
+        
+        .benefit-number {
+            font-family: 'Rubik Lines', sans-serif;
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer */
+        .footer-mega {
+            background: rgba(10, 10, 10, 0.95);
+            border-top: 2px solid rgba(255, 69, 0, 0.3);
+            padding: 3rem 2rem 1rem;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .footer-content-mega {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-text-mega h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-text-mega p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.5rem;
+        }
+        
+        .social-links-mega {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links-mega a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 69, 0, 0.1);
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links-mega a:hover {
+            background: var(--primary);
+            color: var(--light);
+            transform: translateY(-5px) rotate(360deg);
+        }
+        
+        .footer-bottom-mega {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 69, 0, 0.2);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .footer-bottom-mega a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .nav {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: rgba(10, 10, 10, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                transition: left 0.3s ease;
+            }
+            
+            .nav.active {
+                left: 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+        }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!-- Solar/Sun Background -->
+        <div class="bg-animation">
+            <div class="sun-container">
+                <div class="sun"></div>
+                <div class="sun-rays">
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                </div>
+            </div>
+            <div class="solar-panels">
+                <div class="solar-panel"></div>
+                <div class="solar-panel"></div>
+                <div class="solar-panel"></div>
+            </div>
+            <div class="energy-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <div class="power-icons">
+                <i class="fas fa-sun power-icon"></i>
+                <i class="fas fa-bolt power-icon"></i>
+                <i class="fas fa-solar-panel power-icon"></i>
+                <i class="fas fa-leaf power-icon"></i>
+            </div>
+            <div class="solar-grid"></div>
+        </div>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-inner">
+                <a class="logo" href="index.html"> <img alt="Double R Roofing Logo" class="logo-img" src="images/Double_R_Roofing_logo_with_transparent_background.PNG"/> <span class="logo-text">Double R Roofing</span> </a>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="roofing-services-princeton-wv.html">Services</a>
+                    <a class="nav-link" href="contact-double-r-roofing.html">Contact</a>
+                </nav>
+                <a class="header-phone" href="tel:3047165744"> <i class="fas fa-phone"></i> (304) 716-5744 </a>
+                <button aria-label="Open menu" class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+        <div class="content-wrap">
+            <section class="hero-section">
+                <div class="container">
+                    <span class="badge-pill"> <i class="fas fa-sun"></i> Clean Energy Solutions </span>
+                    <h1 class="hero-title">Solar-Ready Roofing</h1>
+                    <p class="hero-lead">
+                    Prepare your roof for solar energy with our solar-ready roofing systems. 
+                    Energy-efficient solutions designed to maximize your solar investment. </p>
+                    <a class="btn-primary-custom" href="contact.html"> <i class="fas fa-solar-panel"></i>Get Solar Consultation </a>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Solar Roofing Solutions</h2>
+                    <div class="services-grid">
+                        <div class="service-card reveal">
+                            <div class="service-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <h3 class="service-title">Solar-Ready Installation</h3>
+                            <p class="service-description">
+                            New roof installations engineered for optimal solar panel compatibility and future expansion. </p>
+                        </div>
+                        <div class="service-card reveal">
+                            <div class="service-icon">
+                                <i class="fas fa-solar-panel"></i>
+                            </div>
+                            <h3 class="service-title">Integrated Solar Systems</h3>
+                            <p class="service-description">
+                            Complete roofing and solar panel integration for seamless energy production and protection. </p>
+                        </div>
+                        <div class="service-card reveal">
+                            <div class="service-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3 class="service-title">Energy-Efficient Roofing</h3>
+                            <p class="service-description">
+                            Reflective and cool roof systems that reduce energy costs and maximize solar efficiency. </p>
+                        </div>
+                        <div class="service-card reveal">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="service-title">Energy Assessments</h3>
+                            <p class="service-description">
+                            Professional roof evaluations to determine solar potential and optimal panel placement. </p>
+                        </div>
+                        <div class="service-card reveal">
+                            <div class="service-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 class="service-title">Solar Panel Mounting</h3>
+                            <p class="service-description">
+                            Expert mounting systems designed to protect your roof while supporting solar arrays. </p>
+                        </div>
+                        <div class="service-card reveal">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="service-title">Warranty Protection</h3>
+                            <p class="service-description">
+                            Comprehensive warranties covering both roofing and solar integration work. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Solar Benefits</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card reveal">
+                            <div class="benefit-number">30%</div>
+                            <h3>Energy Savings</h3>
+                            <p>Average reduction in energy costs with solar-ready roofing systems</p>
+                        </div>
+                        <div class="benefit-card reveal">
+                            <div class="benefit-number">25+</div>
+                            <h3>Year Lifespan</h3>
+                            <p>Durable roofing designed to support solar panels for decades</p>
+                        </div>
+                        <div class="benefit-card reveal">
+                            <div class="benefit-number">100%</div>
+                            <h3>Clean Energy</h3>
+                            <p>Renewable power generation with zero emissions</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer-mega">
+            <div class="footer-content-mega">
+                <div class="footer-text-mega">
+                    <h3>Double R Roofing</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 510 Oliver Ave, Princeton, WV 24740</p>
+                    <p><i class="fas fa-phone"></i> (304) 716-5744</p>
+                    <p><i class="fas fa-envelope"></i> info@double-r-roofing.com</p>
+                </div>
+                <div class="social-links-mega">
+                    <a href="https://www.facebook.com/doublerroofing" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/doublerroofing" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom-mega">
+                <p>© 2026 Double R Roofing. All Rights Reserved. | <a href="privacy-policy-princeton-wv.html">Privacy Policy</a></p>
+            </div>
+        </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('.nav');
+            
+            if (mobileMenuBtn && nav) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                });
+            }
+
+            const reveals = document.querySelectorAll('.reveal');
+            const revealOnScroll = () => {
+                reveals.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('active');
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll();
+        });
+    </script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
